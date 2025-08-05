@@ -1,0 +1,40 @@
+/* Light Theme */
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: sans-serif;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.blog-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Dark Theme */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode .blog-card {
+  border-color: #444;
+}
